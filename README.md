@@ -31,3 +31,33 @@ To compile the project, ensure you have a C compiler (e.g., GCC) installed. Then
 
 ```bash
 make
+```
+This will generate the fetchmail executable.
+
+To clean the project, run:
+```bash
+make clean
+```
+ ## Usage
+
+The program is executed using the following command-line arguments:
+```bash
+fetchmail -u <username> -p <password> [-f <folder>] [-n <messageNum>] <command> <server_name>
+```
+Where:
+
+* -u <username>: IMAP username.
+* -p <password>: IMAP password.
+* -f <folder>: (Optional) Folder to access. Defaults to INBOX.
+* -n <messageNum>: (Optional) Message sequence number. Fetches the last message if not specified.
+* <command>: One of retrieve, parse, mime, or list.
+* <server_name>: IMAP server hostname.
+
+## Dependencies
+C compiler (GCC or similar)
+
+## Standards
+This project adheres to the following RFC standards:
+* RFC 3501: Internet Message Access Protocol Version 4rev1
+* RFC 2045: Multipurpose Internet Mail Extensions (MIME) Part One: Format of Internet Message Bodies
+* RFC 2046: Multipurpose Internet Mail Extensions (MIME) Part Two: Media Types1
