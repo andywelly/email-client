@@ -1,1 +1,33 @@
-COMP30023 2024 - Project 2
+# Email Client with IMAP Support (C)
+
+This project is a simple email client written in C that downloads and parses emails from a standards-compliant IMAP server. It was developed as part of COMP30023 Project 2 at the University of Melbourne.
+
+## Project Overview
+
+The primary goal of this project was to gain experience with socket programming and network protocols. The client implements core IMAP functionalities, including:
+
+* Secure authentication
+* Message retrieval
+* Header parsing
+* MIME decoding
+* Listing emails in a mailbox
+
+The project also incorporates security measures and adheres to relevant RFC standards.
+
+## Features
+
+* **IMAP Protocol Implementation:** Downloads and parses emails using the IMAP protocol (RFC 3501).
+* **Secure Authentication:** Supports secure login to IMAP servers.
+* **Message Retrieval:** Fetches raw email messages from the server.
+* **Header Parsing:** Extracts and displays email headers (From, To, Date, Subject).
+* **MIME Decoding:** Parses and decodes MIME-encoded emails (RFC 2045, RFC 2046) to display plain text content.
+* **Email Listing:** Lists email subjects in a specified mailbox.
+* **Error Handling:** Robust error handling for invalid commands, connection failures, and parsing errors.
+* **Command-Line Interface:** User-friendly command-line interface with various options.
+
+## Compilation
+
+To compile the project, ensure you have a C compiler (e.g., GCC) installed. Then, simply run:
+
+```bash
+make
