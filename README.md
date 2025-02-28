@@ -1,6 +1,6 @@
 # Email Client with IMAP Support (C)
 
-This project is a simple email client written in C that downloads and parses emails from a standards-compliant IMAP server. It was developed as part of COMP30023 Project 2 at the University of Melbourne.
+This project is a simple email client written in C that downloads and parses emails from a standards-compliant IMAP server. It was developed as part of COMP30023 at the University of Melbourne.
 
 ## Project Overview
 
